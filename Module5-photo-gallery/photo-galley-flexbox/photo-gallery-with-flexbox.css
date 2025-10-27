@@ -17,6 +17,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
 }
 .gokart-images{
     border: 10px;
