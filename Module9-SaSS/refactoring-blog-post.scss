@@ -1,0 +1,54 @@
+$h1-font-size: xx-large;
+$common-background-color: azure;
+$div-border-width: 10px;
+$div-padding: 50px;
+$div-margin: 10px;
+$p-padding: 10px;
+$image-background: linear-gradient(to bottom right, #d90c0c, #2df6d1);
+$image-border-radius: 25px;
+$image-margin: 15px;
+$image-box-shadow: 10px 10px 10px rgb(0, 9, 0);
+$profile-height: 100px;
+$profile-border-radius: 50%;
+
+@mixin default-flex-properties(){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: $h1-font-size;
+}
+
+header{
+    background-color: $common-background-color;
+    @include default-flex-properties();
+}
+
+div{
+    background-color: $common-background-color;
+    padding: $div-padding;
+    border-width: $div-border-width;
+    margin: $div-margin;
+    @include default-flex-properties();
+}
+
+p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: $p-padding;
+    text-align: justify;
+}
+
+img{
+    margin: $image-margin;
+    border-radius: $image-border-radius;
+    background: $image-background;
+    box-shadow: $image-box-shadow;
+}
+
+#virat-profile{
+    height: $profile-height;
+    border-radius: $profile-border-radius;
+}
