@@ -1,0 +1,138 @@
+.nomad-images {
+    display: flex;
+    /* position: relative; */
+    overflow: hidden;
+    width: fit-content;
+    height: fit-content;
+    width: 100%;
+    height: 150%;
+    /* box-sizing: border-box; */
+  }
+
+
+ .nomad-images .image1 {
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+    /* top: 0px;
+    left: 0px; */
+    z-index: 2;
+  }
+
+ .nomad-images .image2 {
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+    top: 90px;
+    right: 10px;
+    z-index: 1;
+    
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+*************************************************
+
+
+
+
+
+
+
+
+
+
+
+  #residences{
+    padding-left: 27rem;
+    padding-right: 20rem;
+  }
+  #residences-content{
+    left: 300px;
+    /* display: flex;
+    align-content: left; */
+  }
+  #residences p{
+    /* padding: 10px; */
+    font-size: 18px;
+    line-height: 30px;
+    width: 35rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  #residences h2{
+    color: rgb(59,61,71);
+    display: block;
+    font-size: 85px;
+    font-weight: 400;
+  }
+  /* #residences .images{
+    display: flex;
+    flex-direction: row;
+    align-items: space-around;
+  }
+  #residences img{
+    display: block;
+    width: 50rem;
+    height: auto;
+    padding: 10rem;
+    padding-right: 10rem;
+} */
+#residences a{
+    color: black;
+    padding: 10px 25px;
+    /* margin: 15px; */
+    margin-top: 50px;
+    border: 2px solid black;
+    text-decoration: none;
+  }
+  #button:hover{
+    background-color: black;
+    color: white;
+  }
+
+  /* .images{
+    display: flex;
+    align-content: center;
+  }
+  .images .gallery{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .images img{
+    align-items: space-between;
+  } */
+  /* #residences #residences-text{
+    display: flex;
+    flex-direction: column;
+  }
+  #residences h2{
+    color: rgb(59, 61, 71);
+    display: block;
+    font-family: "Portrait Condensed", sans-serif;
+    font-size: 85px;
+    font-weight: 400;
+  }
+  #residences p{
+    text-align: justify;
+  }
+  #residences a{
+    display: flex;
+    align-content: center;
+
+    text-decoration: none;
+    color: black;
+    padding: 5px 2px;
+    border: 2px solid black;
+  } */
