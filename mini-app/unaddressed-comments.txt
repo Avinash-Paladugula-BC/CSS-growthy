@@ -1,0 +1,17 @@
+Unaddressed Code Review Comments
+
+HTML Structure & Semantics:
+
+1. Form label association issues:
+   - Lines 278, 281, 284: Radio button inputs don't have id attributes matching the label's "for" attribute
+   
+2. HTML syntax error:
+   - Line 200: Typo in data attribute - "data-laasdfbel" should be "data-label" (IMP)
+
+CSS Code Quality:
+
+1. CSS syntax errors:
+   - Line 637 (mini-app.css): Incomplete CSS rule - ".nomad-imag" without closing brace.
+
+2. Testing/debugging code:
+   - Lines 776-777 (mini-app.css): Testing borders and background colors present
