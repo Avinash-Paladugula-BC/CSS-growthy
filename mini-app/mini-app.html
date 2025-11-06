@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="mini-app.css">
 </head>
 <body>
-
+    <!-- enclosing all the individual parts into one div -->
     <div id="root">
+        <!-- header section: intro video -->
         <header id="header">
             <video autoplay loop muted src="https://github.com/M-VINAY678/CSS_Activities/raw/refs/heads/main/Activity10/images/video.mp4" title="intro-video"  id="intro-video"></video>
             <a id="logo"  href="">
@@ -17,6 +18,7 @@
             <p>Immediate Occupancy on Fifth Avenue</p>
         </header>
     
+        <!-- moto section: contains the moto and a sample image -->
         <section id="moto-container">
             <section id="moto">
                 <div class="moto-image">
@@ -39,13 +41,13 @@
             </section>
         </section>
             
+        <!-- Samples section: contains a slide show with few images -->
         <section id="samples">
             <div id="image-slide-show"></div>
             <p>Homes designed by internationally acclaimed architect <span class="white-font">Rafael Viñoly,</span> with thoughtfully appointed interiors by Jeffrey Beers International.</p>
         </section>
     
-    
-    
+        <!-- Residences section: 2 images with their description like details -->
         <section id="residences">
             <div class="residences-container">
                     <div class="heading-div">
@@ -110,6 +112,8 @@
                 </div>
             </div>
         </section>
+
+        <!-- Amenities section: few images covering all rooms of a house with a smooth scroll -->
         <section id="amenities">
             <div class="amenities-container">
                 <div class="heading"><h2>Amenities</h2></div>
@@ -143,6 +147,7 @@
             </div>
         </section>
     
+        <!-- Nomad section: an over-lapping 2 images with small description -->
         <section id="nomad-container">
             <div class="nomad">
                 <div class="left-part" >
@@ -163,6 +168,7 @@
             </div>
         </section>
         
+        <!-- Map section: for easy navigation -->
         <section id="map-container">
             <div class="map">
                 <div class="map-options">
@@ -177,6 +183,7 @@
             </div>
         </section>
     
+        <!-- Availability container: a table with the details of choices available -->
         <section id="availability-container">
             <div class="availability">
                 <div class="heading">
@@ -197,7 +204,7 @@
                         </thead>
                         <tbody>
                           <tr class="table-record">
-                            <td data-laasdfbel="RESIDENCE">PH55</td>
+                            <td data-label="RESIDENCE">PH55</td>
                             <td data-label="BED/BATH">4 / 4.5</td>
                             <td data-label="INT. /EXT.SQ FT">4,520/780</td>
                             <td data-label="EXPOSURES">N,E,S,W</td>
@@ -216,7 +223,7 @@
                             <td data-label="MONTHLY RE TAX">$8,701</td>
                             <td data-label=""><a href="https://277fifthnomad.com/wp-content/uploads/1708482011-PH53-Option1.jpg" target="_blank">FLOORPLAN</a></td>
                           </tr>
-                          <tr class="table-record">
+                          <tr id="last-record" class="table-record">
                             <td data-label="RESIDENCE">46B</td>
                             <td data-label="BED/BATH">3 / 3.5</td>
                             <td data-label="INT. /EXT.SQ FT">2,333 / 206</td>
@@ -232,6 +239,7 @@
         </section>
     
     
+        <!-- footer: contains organizations information and a form -->
         <footer id="footer-container">
             <div class="footer">
                 <div class="details">
@@ -275,13 +283,13 @@
                         <label for="bedroom">DESIRED RESIDENCE TYPE</label>
                         <div class="bedroom-options">
                             <div>
-                                <input class="bedroom" type="radio" name="bedroom"> <label for="bedroom">1 BEDROOM</label>
+                                <input id="bedroom1" class="bedroom" type="radio" name="bedroom"> <label for="bedroom1">1 BEDROOM</label>
                             </div>
                             <div>
-                                <input type="radio" name="bedroom" class="bedroom"><label for="bedroom">2 BEDROOM</label>
+                                <input id="bedroom2" type="radio" name="bedroom" class="bedroom"><label for="bedroom2">2 BEDROOM</label>
                             </div>
                             <div>
-                                <input type="radio" name="bedroom" class="bedroom"> <label for="bedroom">3 BEDROOM</label>
+                                <input id="bedroom3" type="radio" name="bedroom" class="bedroom"> <label for="bedroom3">3 BEDROOM</label>
                             </div>
                         </div>
                     </div>
@@ -323,6 +331,7 @@
             </div>
         </footer>
     
+        <!-- promotion section: displaying the partners -->
         <section id="promotion-container">
             <div class="promotion">
                 <div><img src="assets/promotions/home-icon.svg" alt="Home icon"></div>
