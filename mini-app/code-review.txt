@@ -1,0 +1,89 @@
+Code Review Comments
+
++ve's:
+
+- Static video rendering, the css fits perfectly (usage of autoplay, loop, and muted attributes).
+- Carousel like transition for the images in the Amenities section.
+- Responsiveness for tablets and larger devices like monitors.
+- Drop downs in Residencies section.
+- Good implementation of CSS keyframe animations for slideshow effect with smooth transitions.
+- Good use of Flexbox for layout organization in multiple sections.
+- Usage of data-label attributes for responsive table design.
+- Good visual hierarchy with appropriate font sizes and spacing in most sections.
+
+
+UX comments:
+- Hover effects missing for some buttons (FACT SHEET under Residencies) (MINOR)
+- Could have better line spacing across the page.
+- In Inquire section desired residence type should be radio buttons instead of multiple select.
+- Validations are missing in the form.
+- Availability section has some inconsistencies wrt to the UI given.
+
+Responsive comments:
+- The page is broken on mobile devices. (Availability table section, overlapping images, amenities, initial video section, Inquiry section, footer section, etc.)
+- Borders which were added for testing were not removed. 
+
+
+Code comments:
+
+File naming:
+- File naming should be better.
+    - should've reviewed the file naming conventions and used the correct ones. (asdf.webp, 123445.svg, EQH.svg etc).
+    - File names should be descriptive and should be in lowercase.
+- No dead files should be present. (asdf.txt)
+
+HTML Structure & Semantics:
+
+1. Missing proper HTML5 semantic elements:
+   - The page uses generic <div> tags instead of semantic HTML5 elements like <header>, <nav>, <main>, <section>, <article>, <footer>.
+
+2. Empty divs without purpose:
+   - Lines 50-51, 54, 59: Empty <div> tags without classes or IDs. (MINOR)
+
+3. Form structure issues:
+   - The form is wrapped in a <div> instead of a proper <form> element (line 265). (IMP)
+   - Form inputs are not properly associated with labels (accessibility issue).
+   - Radio buttons for "DESIRED RESIDENCE TYPE" have different name attributes (bedroom1, bedroom2, bedroom3) - they should all have the same name to work as a radio group (line 281, 284, 287). (IMP)
+   - Radio buttons for "ARE YOU A BROKER" use non-descriptive name name="a" (line 316, 319).
+
+4. Accessibility issues:
+   - Missing or generic alt text on images (lines 14, 68, 88, etc.). (MINOR)
+   - Video element has alt attribute which is invalid - should use aria-label or title (line 12).
+   - Form inputs lack proper <label> elements with for attributes. (MINOR)
+
+5. HTML syntax errors:
+   - Line 184: Typo "Avilability" instead of "Availability". (MINOR)
+   - Line 217: HTML syntax error - $5,874/td> should be $5,874</td> (missing opening <). (IMP)
+
+6. Inline styles:
+   - Multiple inline styles throughout the HTML (lines 35, 161-162, 175) should be moved to CSS. (IMP)
+
+CSS Code Quality:
+
+1. Poor naming conventions:
+   - Class name asdf (line 115, 179) is not descriptive and violates naming conventions.
+   - Should use descriptive, semantic class names like amenities-container or amenities-section.
+
+2. CSS syntax errors:
+   - Line 458: Typo font-style: san-serif; should be sans-serif (also incorrect property - should be font-family). (IMP)
+   - Line 484: Missing unit width: 100; should be width: 100%.
+
+3. Duplicate CSS rules:
+   - .map class is defined twice (lines 335 and 340) with conflicting properties. This causes confusion and potential bugs. (MINOR)
+
+4. Duplicate property definitions:
+   - Line 493: border-bottom: 1px solid black; is defined twice in the same rule. (MINOR)
+
+5. Commented out code:
+   - Commented CSS should be removed (lines 176, 431, 467, 623-626).
+   - Testing borders should be removed (line 615: border: 5px solid rgb(255, 0, 0);).
+
+6. Accessibility in CSS:
+   - Missing focus states for interactive elements (buttons, links, form inputs) like hover.
+
+Code Structure & Organization:
+
+1. No comments in the html or css files. (Good to have)
+2. No responsive design strategy: 
+   - Only one media query breakpoint at 1160px. (IMP)
+   - No mobile-first approach. (Good to know)

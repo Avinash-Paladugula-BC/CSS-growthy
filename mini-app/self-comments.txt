@@ -1,0 +1,11 @@
+Self comments
+
+UX comments:
+- Font style in Residences drop down is not matching with what is there in the design.
+- NoMad section has responsiveness issues.
+- Availability header should be slightly to left and the section has an additional horizontal border.
+    - Spacing between the columns in the table.
+
+
+Code comments:
+- file naming.
